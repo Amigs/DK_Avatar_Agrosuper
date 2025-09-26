@@ -137,6 +137,10 @@ backend/.ruff_cache/
 # PyPI configuration file
 backend/.pypirc
 
+
+################################# Python react fronted #########################
+##################################################################################
+
 node_modules/
 venv/
 dist/
@@ -147,74 +151,66 @@ testbackend/
 ########################
 
 # Node modules
-node_modules/
+frontend/node_modules/
 
 # Build output
-/build
-/dist
+frontend/build
+frontend/dist
 
 # Dependency directories
-bower_components/
+frontend/bower_components/
 
 # Testing
-/coverage
+frontend/coverage
 
 # System files
-.DS_Store
-Thumbs.db
+frontend/.DS_Store
+frontend/Thumbs.db
 
 # Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
 
 # Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
 
 # Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+frontend/.vscode/
+frontend/.idea/
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
 
 # MacOS and Linux
-*.swp
-*.lock
-*.pid
+frontend/*.swp
+frontend/*.lock
+frontend/*.pid
 
 # Optional npm cache
-.npm/
+frontend/.npm/
 
 # eslint cache
-.eslintcache
+frontend/.eslintcache
 
 # Parcel cache
-.cache/
+frontend/.cache/
 
 # Next.js build directory (si usas Next.js en lugar de CRA)
-.next/
+frontend/.next/
 
 # React Native (si aplicara)
-.expo/
-.expo-shared/
+frontend/.expo/
+frontend/.expo-shared/
 
 # Storybook
-.out/
-
-# Optional: ignore public assets cache
-# *.webp
-# *.jpg
-# *.jpeg
-# *.png
-# *.svg
-# *.gif
+frontend/.out/
 
 # Optional: ignore temporary development folders
-tmp/
-temp/
+frontend/tmp/
+frontend/temp/
