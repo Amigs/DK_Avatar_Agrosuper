@@ -5,9 +5,9 @@ import os
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse, HTMLResponse
 
-from app import config
-from app.rtmt import RTMiddleTier
-from app.prompts import system_prompt
+from app.core import config
+from app.inference.rtmt import RTMiddleTier
+from app.core.prompts import system_prompt
 #from app.tools import search_products_text_tool
 
 
