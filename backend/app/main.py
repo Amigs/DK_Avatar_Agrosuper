@@ -4,7 +4,6 @@ import os
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse, HTMLResponse
-from fastapi.staticfiles import StaticFiles
 
 from app import config
 from app.rtmt import RTMiddleTier
@@ -28,15 +27,6 @@ rtmt = RTMiddleTier(
 
 # ── FastAPI ────────────────────────────────────────────────────────────────────
 app = FastAPI(title="Realtime-Voice-Demo")
-
-# # ▷ Archivos estáticos (index + js + css)
-# static_dir = Path(__file__).resolve().parent.parent / "static"
-# app.mount("/static", StaticFiles(directory=static_dir), name="static")
-
-# @app.get("/", include_in_schema=False)
-# async def root() -> FileResponse:
-#     return FileResponse(static_dir / "index.html")
-
 
 # ▶ WebSocket principal
 @app.websocket("/realtime")
