@@ -12,6 +12,6 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "🚀 Ejecutando el contenedor..."
-docker run --rm -it -p 8001:80 $IMAGE_NAME
+docker run --rm -it -p 8080:80 $IMAGE_NAME
 
 echo "✅ El contenedor está corriendo en: http://localhost:$PORT"
